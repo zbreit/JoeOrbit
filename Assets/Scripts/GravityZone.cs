@@ -19,10 +19,7 @@ public class GravityZone : MonoBehaviour
         Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
 
         if (rb)
-        {
-            Debug.Log($"Gravitating {other.gameObject.name}");
             rigidbodies.Add(rb);
-        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -30,10 +27,7 @@ public class GravityZone : MonoBehaviour
         Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
 
         if (rb)
-        {
-            Debug.Log($"Degravitating {other.gameObject.name}");
             rigidbodies.Remove(rb);
-        }
     }
 
     void ApplyGravity()
@@ -43,8 +37,6 @@ public class GravityZone : MonoBehaviour
             Vector3 direction = (transform.position - rb.position).normalized;
 
             rb.AddForce(direction * gravity, ForceMode.Acceleration);
-
-            Debug.DrawRay(rb.position, direction);
         }
     }
 }
