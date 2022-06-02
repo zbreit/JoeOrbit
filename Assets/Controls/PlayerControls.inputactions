@@ -24,13 +24,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Fire",
+                    "name": "Shoot",
                     "type": "Button",
                     "id": "ce3bc2c2-f06d-444a-898a-8f12f641018e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Suck",
+                    "type": "Button",
+                    "id": "9f2b0ca3-6179-4748-b8ec-16ece1cf5e54",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Jump",
@@ -40,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SwapTools",
+                    "type": "Value",
+                    "id": "a24cda13-b28b-414c-90d6-45a74817a3a2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -215,7 +233,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -226,7 +244,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -237,7 +255,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -248,7 +266,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -259,7 +277,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -273,6 +291,61 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "01ea94c8-8335-4c95-842a-e490575a6ad4",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Suck",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "39c8b0d2-1a17-49fd-bce8-2bb089ecaea1",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Suck",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Tab/Ctrl [Keyboard]",
+                    "id": "7b76539b-7f41-4ce4-8d7a-d7cfd75173e0",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapTools",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "b5a4db67-38f9-4b00-a6a6-2d03e80adc0d",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "SwapTools",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "2fb0ff98-52c1-4453-b94e-53a6e2c93947",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "SwapTools",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
