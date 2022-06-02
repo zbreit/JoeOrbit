@@ -18,7 +18,12 @@ public class GravityZone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.attachedRigidbody)
+        {
             rigidbodies.Add(other.attachedRigidbody);
+
+            // TODO: do we need to cache the old value of useGravity?
+            other.attachedRigidbody.useGravity = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)
