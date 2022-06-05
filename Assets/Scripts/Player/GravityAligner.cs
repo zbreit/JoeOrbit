@@ -18,10 +18,10 @@ public class GravityAligner : MonoBehaviour
         if (!zone) 
             return;
 
-        if (gravityZone)
-            Debug.Log($"Swapping from gravity zone {gravityZone.gameObject.name} -> {zone.gameObject.name}");
-        else
-            Debug.Log($"Entering gravity zone {zone.gameObject.name}");
+        //if (gravityZone)
+        //    Debug.Log($"Swapping from gravity zone {gravityZone.gameObject.name} -> {zone.gameObject.name}");
+        //else
+        //    Debug.Log($"Entering gravity zone {zone.gameObject.name}");
 
         gravityZone = zone;
     }
