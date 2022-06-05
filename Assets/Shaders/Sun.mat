@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8243278855099260170
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MiniMap
-  m_Shader: {fileID: -6465566751694194690, guid: 93d7de6cdadd6b04dafd9da78826a558,
+  m_Name: Sun
+  m_Shader: {fileID: -6465566751694194690, guid: ac6cb397aece28540a2e657f25ce2811,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,29 +48,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fresnel: 0.248
-    - _Glow: 8.62
-    - _IsMain: 1
-    - _LineDensity: 47.26
-    - _LineQuality: 12.2
-    - _Opacity: 0.7
+    - _Movement: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 0.1
-    - _Step: 11.89
+    - _SpikeDensity: 5.28
+    - _SpikeHeight: 0.1
     m_Colors:
-    - _Color: {r: 0.27058828, g: 1, b: 0.7766604, a: 0}
+    - _MidColor: {r: 0.9056604, g: 0.8069897, b: 0.21787107, a: 0}
+    - _PeakColor: {r: 1, g: 0.98276895, b: 0.14622638, a: 0}
+    - _ValleyColor: {r: 0.9056604, g: 0.749468, b: 0.0982556, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8628409969621579709
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
